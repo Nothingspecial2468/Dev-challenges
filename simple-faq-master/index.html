@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple FAQ | devChallenges.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        background-color: #D2D5DA;
+        font-family: 'Inter', sans-serif;
+        color: #030616;
+      }
+
+      .container{
+        background-color:#FFFFFF;
+        padding:2rem;
+        border-radius:1rem;
+        width:100%;
+        max-width:800px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .header{
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .header h1{
+        margin-bottom:1rem;
+      }
+
+      .header p{
+        margin-bottom:1rem;
+      }
+
+      .main-content{
+        background-color: #f8fafc;
+        padding:2rem 5rem;
+        border-radius:1rem;
+        margin-bottom:2rem;
+      }
+
+      .main-content h2{
+        margin-bottom:1.5rem;
+      }
+
+      .main-content p{
+        margin:1.5rem auto 1.5rem auto;
+      }
+
+      .main-content ol, .main-content ul{
+        padding-left:1.5rem;
+        margin-bottom:1rem;
+      }
+
+      .main-content a{
+        color: #4B6A9B;
+        text-decoration: none;
+      }
+
+      hr{
+        margin:1rem auto 1rem auto;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 1.5rem 1rem;
+        }
+
+        .container {
+          padding: 1.5rem;
+        }
+
+        .main-content {
+          padding: 1.5rem 1rem;
+        }
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+      <h1>Frequently Asked Questions</h1>
+      <p>Browse through the most frequently asked questions</p>
+    </div>
+
+    <div class="main-content">
+      <h2>How can I track my order?</h2>
+  
+    <p>You can track your order using the following steps:</p>
+  
+    <ol>
+      <li>Go to the Order <a href="#">Tracking Page.</a></li>
+      <li>Enter your order number and email address.</li>
+      <li>Click on the Track Order button to view the current status of your shipment.</li>
+    </ol>
+  
+    <p>If you encounter any issues, please visit our <a href="#">Help Center.</a></p>
+    <hr>
+  
+    <h2>What is your return policy?</h2>
+  
+    <p>We offer a 30-day return policy on most items. Here are some key points:</p>
+  
+    <ul>
+      <li><b>Items must be in original condition: </b>Unworn, unused, and unwashed.</li>
+      <li><b>Include original packaging and tags: </b>All items should be returned with their original packaging and tags.</li>
+      <li><b>Proof of purchase: </b>A receipt or proof of purchase is required.</li>
+    </ul>
+  
+    <p>For more detailed information, read our full <a href="#">Return Policy.</a></p>
+    </div>
+    </div>
+
+    <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
