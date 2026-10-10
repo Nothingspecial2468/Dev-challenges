@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Pricing Table | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Inter", sans-serif;
+      }
+
+      header{
+        background-color:#4D556233;
+      }
+
+      .hero{
+        text-align: center;
+        padding: 48px 24px;
+        background-color: #f3f4f6;
+      }
+
+      .hero h1{
+        font-size:32px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      .hero p{
+        font-size:16px;
+        color:#4D5562;
+      }
+
+      .pricing{
+        flex: 1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding: 48px 24px;
+        background-color:#ffffff;
+      }
+
+      .pricing-table{
+        width: 100%;
+        max-width: 800px;
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+
+      .pricing-table th,
+      .pricing-table td{
+        padding: 16px 12px;
+      }
+
+      .pricing-table td{
+        text-align: center;
+      }
+
+      .pricing-table tbody th,
+      .pricing-table tbody td{
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .pricing-table tbody th[scope="row"]{
+        background-color:#f3f4f6;
+        text-align: left;
+        border-left: 1px solid #e5e7eb;
+        border-right: 1px solid #e5e7eb;
+      }
+
+      .pricing-table tbody tr:first-child th[scope="row"]{
+        border-top: 1px solid #e5e7eb;
+        border-radius: 8px 0 0 0;
+      }
+
+      .pricing-table tbody tr:last-child th[scope="row"]{
+        border-bottom: 1px solid #e5e7eb;
+        border-radius: 0 0 0 8px;
+      }
+
+      .pricing-table tbody td.popular{
+        border-bottom-color:#252d3d;
+      }
+
+      .pricing-table thead th[scope="col"]{
+        text-align: center;
+        font-size: 16px;
+        color:#263FA9;
+      }
+
+      .pricing-table thead th[scope="col"] strong{
+        display:block;
+        color:black;
+        font-size: 40px;
+        margin: 8px;
+      }
+
+      .pricing-table thead th[scope="col"] span{
+        display:block;
+        font-size: 14px;
+        color:#4D5562;
+      }
+
+      .pricing-table .popular{
+        background-color:#121826;
+        color:white;
+      }
+
+      .pricing-table thead th.popular{
+        color:white;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .pricing-table thead th.popular .popular-label{
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 999px;
+        background-color: #263FA9;
+        color: white;
+        font-size: 14px;
+      }
+
+      
+      .pricing-table thead th.popular strong,
+      .pricing-table thead th.popular span
+      {
+         color: white;
+      }
+
+      .pricing-table tfoot td {
+        padding: 24px 12px;
+        text-align: center;
+      }
+
+      .pricing-table tfoot a {
+        color: #263FA9;
+        font-weight: 700;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .pricing-table tfoot td.popular {
+        background-color: #80501f;
+        border-radius: 0 0 16px 16px;
+      }
+
+      .pricing-table tfoot td.popular a {
+        color: white;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Pricing &amp; Plans</h1>
+      <p>Discover the plan that unlocks the transformative power of digital art and join our vibrant community today.</p>
+    </header>
+
+    <main class="pricing">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Free <strong>$0</strong><span>Per month</span></th>
+            <th scope="col">Team <strong>$59</strong><span>Per month</span></th>
+            <th scope="col" class="popular"><span class="popular-label">Popular</span><strong>$99</strong><span>Per month</span></th>
+            <th scope="col">Enterprise <strong>$299</strong><span>Per month</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Website number</th>
+            <td>01</td>
+            <td>10</td>
+            <td class="popular">50</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <th scope="row">Server storage</th>
+            <td>100 GB</td>
+            <td>500 GB</td>
+            <td class="popular">1 TB</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <th scope="row">Database</th>
+            <td>-</td>
+            <td>15</td>
+            <td class="popular">Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <th scope="row">Unmetered Bandwidth</th>
+            <td>-</td>
+            <td>✔</td>
+            <td class="popular">✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <th scope="row">SSD Disk</th>
+            <td>-</td>
+            <td>-</td>
+            <td class="popular">✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <th scope="row">VCPUS Fontworld</th>
+            <td>-</td>
+            <td>-</td>
+            <td class="popular">✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <th scope="row">Worldpress install</th>
+            <td>-</td>
+            <td>-</td>
+            <td class="popular">✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <th scope="row">Server speed</th>
+            <td>-</td>
+            <td>-</td>
+            <td class="popular">✔</td>
+            <td>✔</td>
+          </tr>
+        </tbody >
+        <tfoot>
+          <tr>
+            <td></td>
+            <td><a href="#">Get Started →</a></td>
+            <td><a href="#">Get Started →</a></td>
+            <td class="popular"><a href="#">Get Started →</a></td>
+            <td><a href="#">Get Started →</a></td>
+          </tr>
+        </tfoot>
+      </table >
+    </main >
+
+    <div class="author-info">
+      Coded by <a href="#">Neha</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
